@@ -1,0 +1,36 @@
+<mat-card class="mdc-card">
+  <mat-card-content>
+    <p>Rating Q1 Score = 3</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="mdc-card">
+    <mat-card-content>
+      <p>Rating Q2 Score = 3</p>
+    </mat-card-content>
+</mat-card>
+<mat-card class="mdc-card">
+    <mat-card-content>
+     Rating Q3
+      <mat-form-field>
+          <mat-label>Please Choose</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let rating of ratings" [value]="rating.value">
+              {{rating.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+   </mat-card-content>
+</mat-card>
+<mat-card class="mdc-card">
+   <mat-card-content>
+     Rating Q4
+      <mat-form-field>
+          <mat-label>Please Choose</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let rating of ratings" [value]="rating.value">
+              {{rating.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+   </mat-card-content>
+ </mat-card>
