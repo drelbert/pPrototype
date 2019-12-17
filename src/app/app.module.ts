@@ -5,35 +5,24 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BaseModule } from './base/base.module';
 import { MaterialModule } from './material/material.module';
-import { BaseComponent } from './base/base.component';
-import { HeaderComponent } from './base/header/header.component';
-import { DashboardComponent } from './base/dashboard/dashboard/dashboard.component';
-import { CriticalElementsComponent } from './critical-elements/critical-elements/critical-elements.component';
-import { UserComponent } from './users/user/user.component';
-import { ManageCriticalElementsComponent } from './critical-elements/manage-critical-elements/manage-critical-elements.component';
-import { QuartlerlyReviewComponent } from './critical-elements/quartlerly-review/quartlerly-review.component';
-import { AchievementsComponent } from './critical-elements/achievements/achievements.component';
 import { EmployeesComponent } from './users/employees/employees.component';
+import { HeaderComponent } from './base/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent,
-    HeaderComponent,
-    DashboardComponent,
-    CriticalElementsComponent,
-    UserComponent,
-    ManageCriticalElementsComponent,
-    QuartlerlyReviewComponent,
-    AchievementsComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    HeaderComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    BaseModule,
     BrowserAnimationsModule,
     HttpClientModule
   ],

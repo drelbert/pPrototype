@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule} from '@angular/flex-layout';
 
 import { BaseComponent } from './base.component';
-import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from '../material/material.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
@@ -17,7 +16,6 @@ import { AchievementsComponent } from '../critical-elements/achievements/achieve
 @NgModule({
   declarations: [
     BaseComponent,
-    HeaderComponent,
     DashboardComponent,
     CriticalElementsComponent,
     UserComponent,
