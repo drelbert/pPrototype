@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuartlerlyReviewComponent } from './quartlerly-review.component';
+import { QuarterComponent } from './quarter.component';
 
-describe('QuartlerlyReviewComponent', () => {
-  let component: QuartlerlyReviewComponent;
-  let fixture: ComponentFixture<QuartlerlyReviewComponent>;
+describe('QuarterComponent', () => {
+  let component: QuarterComponent;
+  let fixture: ComponentFixture<QuarterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuartlerlyReviewComponent ]
+      declarations: [ QuarterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuartlerlyReviewComponent);
+    fixture = TestBed.createComponent(QuarterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

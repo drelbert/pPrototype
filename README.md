@@ -30,16 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://pprototype-7cbf4.firebaseapp.com
 
 # Proto updates
-    build view for 
-
-    titles to left (green)
- 
-    profile expands left to right to be on top of other components 
-        add 
-            hhs id 
-            supervisor status 
-
-    Quartely Review to Quarterly Score 
-        and that move to left side under profile  
-
-        and add form connected to Quartley Score component 
+  12/17
+    

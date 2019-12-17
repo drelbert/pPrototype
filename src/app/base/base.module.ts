@@ -2,32 +2,36 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule} from '@angular/flex-layout';
 
-import { BaseComponent } from './base.component';
 import { MaterialModule } from '../material/material.module';
+import { BaseComponent } from './base.component';
 import { AppRoutingModule } from '../app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { CriticalElementsComponent } from '../critical-elements/critical-elements/critical-elements.component';
+import { HeaderComponent } from './header/header.component';
 import { UserComponent } from '../users/user/user.component';
-import { ManageCriticalElementsComponent } from '../critical-elements/manage-critical-elements/manage-critical-elements.component';
-import { QuartlerlyReviewComponent } from '../critical-elements/quartlerly-review/quartlerly-review.component';
-import { AchievementsComponent } from '../critical-elements/achievements/achievements.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { QuartersComponent } from '../quarterly-review/quarters/quarters.component';
 
 
 @NgModule({
   declarations: [
     BaseComponent,
-    DashboardComponent,
-    CriticalElementsComponent,
+    HeaderComponent,
     UserComponent,
-    ManageCriticalElementsComponent,
-    QuartlerlyReviewComponent,
-    AchievementsComponent
+    QuartersComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule
   ]
 })
 export class BaseModule { }
