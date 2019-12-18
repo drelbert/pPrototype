@@ -5,29 +5,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { QuarterlyReviewModule } from './quarterly-review/quarterly-review.module';
 import { MaterialModule } from './material/material.module';
-import { UsersModule } from './users/users.module';
-import { UserComponent } from './users/user/user.component';
-import { QuartersComponent } from './quarterly-review/quarters/quarters.component';
-import { QuarterComponent } from './quarterly-review/quarter/quarter.component';
-import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AppComponent } from './app.component';
+import { UserComponent } from './users/user/user.component';
+import { QuartersComponent } from './quarterly-review/quarters/quarters.component';
+//import { QuarterComponent } from './quarterly-review/quarter/quarter.component';
+import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    QuartersComponent,
-    QuarterComponent,
     UserDashboardComponent,
-    MainNavComponent
+    MainNavComponent,
+    QuartersComponent
   ],
   imports: [
     BrowserModule,
@@ -36,12 +36,12 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     HttpClientModule,
     MatSidenavModule,
-    UsersModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    QuarterlyReviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
-import { QuartersComponent } from './quarters/quarters.component';
-import { QuarterComponent } from './quarter/quarter.component';
+import { QuarterOneComponent } from './quarters/quarter-one/quarter-one.component';
+import { QuarterTwoComponent } from './quarters/quarter-two/quarter-two.component';
 
 
 @NgModule({
   declarations: [
-    QuartersComponent,
-    QuarterComponent
-  ],
+
+  QuarterOneComponent,
+
+  QuarterTwoComponent],
   imports: [
     CommonModule,
     MaterialModule,

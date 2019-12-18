@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { QuarterComponent } from './quarterly-review/quarter/quarter.component';
 import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
+import { QuarterOneComponent } from './quarterly-review/quarters/quarter-one/quarter-one.component';
+import { QuarterTwoComponent } from './quarterly-review/quarters/quarter-two/quarter-two.component';
 
 
 const routes: Routes = [
 { path: '', component: UserDashboardComponent },
-{ path: 'quarter', component: QuarterComponent }
+{ path: 'quarterOne', component: QuarterOneComponent },
+{ path: 'quarterTwo', component: QuarterTwoComponent}
 
 ];
 

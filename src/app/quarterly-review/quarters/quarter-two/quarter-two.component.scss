@@ -1,0 +1,21 @@
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .mdc-card {
+    background-color: inherit;
+    display: block;
+    padding: relative;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: relative;
+    width: relative;
+    flex: 1;
+  }
+  
+
+  
