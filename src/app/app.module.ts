@@ -18,8 +18,9 @@ import { QuartersComponent } from './quarterly-review/quarters/quarters.componen
 //import { QuarterComponent } from './quarterly-review/quarter/quarter.component';
 import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-
-
+import { DevGoalsComponent } from './users/dev-goals/dev-goals.component';
+import { OrgGoalsComponent } from './users/org-goals/org-goals.component';
+import { DirectReportsComponent } from './users/direct-reports/direct-reports.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     UserComponent,
     UserDashboardComponent,
     MainNavComponent,
-    QuartersComponent
+    QuartersComponent,
+    DevGoalsComponent,
+    OrgGoalsComponent,
+    DirectReportsComponent
   ],
   imports: [
     BrowserModule,
